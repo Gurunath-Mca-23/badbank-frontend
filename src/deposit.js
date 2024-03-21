@@ -14,7 +14,7 @@ const [data,setData]=useState([])
 
 useEffect(()=>{
    const fetchdata=async()=>{
-      await axios.get('http://localhost:8080/data').then((item)=>{setData(item.data)})
+      await axios.get('https://server-nn0o.onrender.com/data').then((item)=>{setData(item.data)})
    };fetchdata()
 },[]);
 
